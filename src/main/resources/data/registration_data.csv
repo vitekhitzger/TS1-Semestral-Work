@@ -1,0 +1,6 @@
+Username,E-mail,Password,Password again,type
+Abrahm,Abraham@afgsb.cz,Felcvut2026,Felcvut2026,success
+a,Abraham@ab.cz,Felcvut2026,Felcvut2026,username-error
+Abrahm,a,Felcvut2026,Felcvut2026,email-error
+Abrahm,Abraham@ab.cz,a,a,passwd1-error
+Abrahm,Abraham@ab.cz,Felcvut2026,D,passwd2-error
