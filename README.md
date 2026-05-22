@@ -6,7 +6,7 @@ Tento repozitář obsahuje semestrální práci z předmětu **Testování softw
 
 ---
 
-## 📝 Funkcionalita aplikace
+## Funkcionalita aplikace
 [cite_start]TweetBird je webová sociální síť postavená na vlastní **MVC architektuře v PHP**[cite: 10].
 * [cite_start]**Správa účtů:** Registrace a přihlášení s validací dat [cite: 12][cite_start], správa relací přes `$_SESSION`[cite: 30].
 * [cite_start]**Příspěvky:** Nahrávání obrázků s ořezem (knihovna GD)[cite: 16]. [cite_start]Limit velikosti: 500 KB[cite: 35], titulek min. [cite_start]7 znaků[cite: 37].
@@ -15,7 +15,7 @@ Tento repozitář obsahuje semestrální práci z předmětu **Testování softw
 
 ---
 
-## 📊 Analýza vstupů a kombinatorika (Pairwise)
+## Analýza vstupů a kombinatorika (Pairwise)
 
 ### 1. Nastavení propagace příspěvku
 [cite_start]Analýza ekvivalentních tříd (EC) a mezních hodnot pro číselné vstupy[cite: 85]:
@@ -30,7 +30,7 @@ Tento repozitář obsahuje semestrální práci z předmětu **Testování softw
 
 ---
 
-## 🔄 Procesní testy (Control Flow Graph)
+## Procesní testy (Control Flow Graph)
 [cite_start]Pomocí nástroje **CPT Manager** byly navrženy průchody zaručující **100% pokrytí všech hran (TDL 2)**[cite: 168, 169].
 
 * [cite_start]**Proces 1 (Registrace a příspěvek):** Sleduje chování uživatele při registraci/přihlášení a detekci chybové smyčky u uploadu souboru většího než limit[cite: 171, 178].
@@ -38,7 +38,7 @@ Tento repozitář obsahuje semestrální práci z předmětu **Testování softw
 
 ---
 
-## 🤖 Automatizace: E2E Testy v Selenium WebDriver
+## Automatizace: E2E Testy v Selenium WebDriver
 Automatizované testy jsou implementovány v Javě s využitím frameworku **JUnit 5** a rozděleny do dvou testovacích tříd podle jejich charakteru.
 
 ### 1. Třída `ProcessTest` (Procesní scénáře)
@@ -57,13 +57,13 @@ Automatizované testy jsou implementovány v Javě s využitím frameworku **JUn
 * **`createAdmin`** – Administrátorský test povýšení uživatele na roli administrátora pomocí tlačítka v dashboardu.
 * **`deleteUser`** – Administrátorský test smazání uživatele z tabulky v dashboardu.
 
-### 📊 Datově řízené testování (Parameterized z CSV)
+### Datově řízené testování (Parameterized z CSV)
 * **`testRegistrationScenarios`** *(Zdroj: `/data/registration_data.csv`)* – Parametrizovaný test, který hromadně ověřuje různé registrační scénáře (kombinace uživatelských jmen, e-mailů, hesel) a porovnává chování s očekávaným úspěchem či konkrétním ID chybového elementu.
 * **`testChangeDisplayName`** *(Zdroj: `/data/login-names.csv`)* – Datem řízená změna zobrazovaného jména v profilu uživatele, testující validní i nevalidní jména s následným ověřením success/error zpráv v UI.
 
 ---
 
-## 🚀 Spuštění testů
+## Spuštění testů
 
 ### Požadavky
 * Java JDK 17+
